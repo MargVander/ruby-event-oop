@@ -9,6 +9,8 @@ describe Event do
 
 	describe 'initializer' do
 		it 'creates an event' do
+			event = Event.new("2019-01-21 14:00", 10, "standup quotidien", ["truc@machin.com", "bidule@chose.fr"])
+			expect(event.class).to eq(Event)
 
 		end
 	end
